@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/piclogo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#9C312F35"
+        android:padding="10dp"
+        android:layout_below="@+id/imageView2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="User name"
+        tools:ignore="NotSibling,UnknownId">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginTop="20dp"
+        android:hint="password"
+        android:layout_below="@+id/username"
+        android:background="#9C312F35"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repassword"
+        android:layout_marginTop="20dp"
+        android:hint="retype password"
+        android:layout_below="@+id/password"
+        android:background="#9C312F35"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="register">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignup"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account? Login">
+
+    </Button>
+
+
+        <TextView
+        android:id="@+id/forgotbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignin"
+
+        android:text="Forgot Passward!!"
+        android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/socialmediabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/socialicons"
+        android:layout_centerHorizontal="true"
+        android:text="or sign in with"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/socialicons"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        tools:ignore="InvalidId">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/fb" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/twiter" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

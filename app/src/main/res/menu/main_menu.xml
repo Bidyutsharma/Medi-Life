@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/nav_Users"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="Users" />
+
+        <item
+            android:id="@+id/nav_profiles"
+            android:icon="@drawable/ic_baseline_assignment_24"
+            android:title="Profiles" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+
+
+    </group>
+
+
+        <item android:title="Communicate">
+
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item android:title="Share" android:icon="@drawable/ic_baseline_settings_24"
+                        android:id="@+id/nav_share"/>
+
+
+
+                    <item android:title="Rate Us" android:icon="@drawable/ic_baseline_star_rate_24"
+                    android:id="@+id/nav_rate_us"/>
+
+                    <item android:title="About Us" android:icon="@drawable/ic_baseline_info_24"
+                        android:id="@+id/nav_about_us"/>
+
+
+
+                </group>
+
+            </menu>
+
+
+        </item>
+
+
+
+
+
+
+        <item android:title="Authenticate">
+
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item android:title="Logout" android:icon="@drawable/ic_baseline_login_24"
+                        android:id="@+id/nav_logout"/>
+
+                    <item android:title="Privacy Policy" android:icon="@drawable/ic_baseline_privacy_tip_24"
+                        android:id="@+id/nav_privacy_policy"/>
+
+
+                </group>
+
+            </menu>
+
+
+        </item>
+
+
+
+
+
+</menu>
