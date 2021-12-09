@@ -8,10 +8,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -49,6 +51,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        navigationView.setCheckedItem((R.id.nav_home));
 
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //
@@ -129,6 +134,56 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.nav_home:
+                break;
+
+            case R.id.nav_search:
+                Toast.makeText(this, "searching", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_Users:
+                Intent intent = new Intent(Homepage.this,Users.class);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_profiles:
+                Toast.makeText(this, "WELCOME TO YOUR PROFILE", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_settings:
+                Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_share:
+                Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_rate_us:
+                Toast.makeText(this, "Rate Us", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_about_us:
+                Toast.makeText(this, "About Us", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_logout:
+                Toast.makeText(this, "LogOut", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_privacy_policy:
+                Toast.makeText(this, "Privacy", Toast.LENGTH_SHORT).show();
+                break;
+
+
+
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+
+
         return true;
     }
 }

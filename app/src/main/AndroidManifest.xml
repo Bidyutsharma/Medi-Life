@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SIgnUp">
         <activity
+            android:name=".Users"
+            android:exported="false" />
+        <activity
+            android:name=".HomeNevi"
+            android:exported="false" />
+        <activity
             android:name=".Homepage"
             android:exported="false" />
         <activity
