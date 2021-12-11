@@ -1,9 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="40dp"
     tools:context=".DiagnosisDetails">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/NameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        android:background="#9C312F35"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+
+        android:drawablePadding="40dp"
+        android:hint="Name"
+        android:padding="20dp"
+
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Phone_No"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NameBtn"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="20dp"
+        android:background="#9C312F35"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="40dp"
+        android:hint="phone no"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone_No"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="20dp"
+        android:background="#9C312F35"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        android:drawablePadding="40dp"
+        android:hint="address"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="InvalidId">
+
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/paymentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/paymentIconBtn"
+        android:layout_marginBottom="50dp"
+        android:text="Payment Method"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+
+        android:textSize="34dp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+
+    <LinearLayout
+        android:id="@+id/paymentIconBtn"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        tools:ignore="InvalidId">
+
+
+        <Button
+            android:id="@+id/bkashBtn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/bbkash"
+
+
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/roket" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/card" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

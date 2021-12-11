@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,12 +7,143 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
 
-    android:background="@drawable/background"
+    android:background="@drawable/backgroundd"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
     tools:context=".Homepage"
     >
-<com.google.android.material.navigation.NavigationView
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/bloodBtn2"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:clickable="true"-->
+
+<!--        android:drawableTop="@drawable/blood"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:fontFeatureSettings="none"-->
+<!--        android:includeFontPadding="true"-->
+<!--        android:text="Diagnosis"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textColor="#0E0101" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pharmacyBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+
+                android:background="@color/white"
+                android:backgroundTint="#B6B3B3"
+                android:backgroundTintMode="src_over"
+                android:drawableTop="@drawable/pharmacy"
+                android:fontFamily="sans-serif-black"
+                android:fontFeatureSettings="none"
+                android:includeFontPadding="true"
+                android:scrollbarThumbHorizontal="@color/white"
+                android:scrollbarThumbVertical="@color/white"
+                android:text="Medicine"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#010C12"
+                app:rippleColor="@color/white" />
+
+            <Button
+
+                android:id="@+id/bloodBtn2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F4D9D9"
+
+                android:clickable="true"
+                android:drawableTop="@drawable/blood"
+                android:fontFamily="sans-serif-black"
+                android:fontFeatureSettings="none"
+                android:includeFontPadding="true"
+                android:shadowColor="#FAF9F9"
+                android:shadowRadius="20"
+                android:text="Diagnosis"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#0E0101" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ambulanceBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ambulance"
+                android:fontFamily="sans-serif-black"
+
+                android:includeFontPadding="true"
+                android:text="Ambulance"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+
+                android:textColor="#100101" />
+
+            <Button
+                android:id="@+id/hospitalBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+
+                android:drawableTop="@drawable/hospital"
+                android:fontFamily="sans-serif-black"
+                android:fontFeatureSettings="none"
+                android:includeFontPadding="true"
+                android:text="Hospital"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#0C0000"
+                tools:ignore="HardcodedText">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:id="@+id/nav_view"
@@ -61,23 +193,34 @@
 <!--    </com.google.android.material.navigation.NavigationView>-->
 </ScrollView>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="410dp"
-        android:layout_height="98dp"
-        android:text="Wow I got it"
-        android:textAlignment="center"
-        android:textColor="#100101"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        app:layout_constraintTop_toTopOf="parent"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="410dp"
+            android:layout_height="98dp"
+            android:text="Wow I got it"
+            android:textAlignment="center"
+            android:textColor="#100101"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintVertical_bias="0.499" />
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.499" />
+
+
+
+
+    </LinearLayout>
+
 
 
 

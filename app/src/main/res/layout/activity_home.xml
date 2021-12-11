@@ -6,4 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Welcome"-->
+<!--        android:textColor="#2C0F0F"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48">
+
+        <Button
+            android:id="@+id/pharmacyBtn1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+
+            android:background="@color/white"
+            android:backgroundTint="#B6B3B3"
+            android:backgroundTintMode="src_over"
+            android:drawableTop="@drawable/pharmacy"
+            android:fontFamily="sans-serif-black"
+            android:fontFeatureSettings="none"
+            android:includeFontPadding="true"
+            android:scrollbarThumbHorizontal="@color/white"
+            android:scrollbarThumbVertical="@color/white"
+            android:text="Medicine"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#010C12"
+            app:rippleColor="@color/white" />
+
+        <Button
+            android:id="@+id/bloodBtn3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:clickable="true"
+
+            android:drawableTop="@drawable/blood"
+            android:fontFamily="sans-serif-black"
+            android:fontFeatureSettings="none"
+            android:includeFontPadding="true"
+            android:text="Diagnosis"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0E0101" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

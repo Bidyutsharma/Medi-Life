@@ -52,11 +52,11 @@ import android.widget.Toast;
                             }
                         }
                         else{
-                            Toast.makeText(MainActivity.this,"User already exists plese login",Toast.LENGTH_SHORT);
+                            Toast.makeText(MainActivity.this,"User already exists plese login",Toast.LENGTH_SHORT).show();
                         }
                     }
                     else{
-                        Toast.makeText(MainActivity.this,"password didnt match",Toast.LENGTH_SHORT);
+                        Toast.makeText(MainActivity.this,"password didnt match",Toast.LENGTH_SHORT).show();
                     }
                 }
 

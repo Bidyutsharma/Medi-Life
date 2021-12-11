@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -21,6 +23,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    Button blood;
 //    ActionBarDrawerToggle actionBarDrawerToggle;
 
 
@@ -39,7 +42,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         setContentView(R.layout.activity_homepage);
 
         drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
+        navigationView= findViewById(R.id.nav_view);
+        blood= (Button) findViewById(R.id.bloodBtn2);
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -51,6 +55,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
+
 
 
         navigationView.setCheckedItem((R.id.nav_home));
@@ -119,6 +124,14 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 //                return true;
 //            }
 //        });
+        blood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Homepage.this,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Intent intentBlood = new Intent(Homepage.this,Diagnosis.class);
+                startActivity(intentBlood);
+            }
+        });
 
     }
     @Override
@@ -138,6 +151,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         switch (item.getItemId()) {
 
             case R.id.nav_home:
+                Intent intent = new Intent(Homepage.this,Home.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_search:
@@ -145,9 +160,13 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 break;
 
             case R.id.nav_Users:
-                Intent intent = new Intent(Homepage.this,Users.class);
-                startActivity(intent);
+                Intent intentt = new Intent(Homepage.this,Users.class);
+                startActivity(intentt);
                 break;
+//            case R.id.bloodBtn:
+//                Intent intentt = new Intent(Homepage.this,Diagnosis.class );
+//                startActivity(intentt);
+//                break;
 
             case R.id.nav_profiles:
                 Toast.makeText(this, "WELCOME TO YOUR PROFILE", Toast.LENGTH_SHORT).show();
@@ -181,9 +200,11 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         }
 
+
         drawerLayout.closeDrawer(GravityCompat.START);
 
 
         return true;
     }
+
 }

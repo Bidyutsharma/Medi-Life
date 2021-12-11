@@ -6,4 +6,268 @@
     android:layout_height="match_parent"
     tools:context=".medicine">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/piclogo" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+
+
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:layout_marginTop="30dp"
+                    android:background="#C0D5C1"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Search"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="NotSibling,UnknownId">
+
+                </EditText>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="150dp">-->
+
+<!--                </ImageButton>-->
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ace"
+                    android:textAlignment="textStart"
+
+                    android:autoSizeMaxTextSize="24dp"
+
+                    android:text="   Ace Tablet\n   paracetamol Square\n  Pharmaceuticals Ltd.\n   Unit Price: ৳ 0.80 " />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+
+
+               >
+
+
+
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+
+                    android:text="   Azithromycin Dihydrate\n   200 mg/5 ml Premier\n   Pharmaceuticals Ltd.\n   30 ml bottle: ৳ 120.00 "
+
+                    android:autoSizeMaxTextSize="24dp"
+                    android:drawableLeft="@drawable/azithromycin"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+
+
+                android:orientation="horizontal">
+
+
+
+
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/admos"
+
+                    android:text="   Amoxicillin Trihydrate\n   125 mg/5 ml Team\n   Pharmaceuticals Ltd.\n   100 ml bottle: ৳ 47.60" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+
+
+                android:orientation="horizontal">
+
+
+
+
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/amloodopine"
+                    android:text="   Amlodipine Besilate\n    5 mg+10 mg Delta Pharma Ltd.\n    Unit Price: ৳ 8.00 " />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+
+
+                android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/admos"
+
+                    android:text="   Amoxicillin Trihydrate\n   125 mg/5 ml Team\n   Pharmaceuticals Ltd.\n   100 ml bottle: ৳ 47.60"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+
+
+                android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="24dp"
+                    android:drawableLeft="@drawable/ace"
+
+                    android:text="   Ace Tablet\n   paracetamol Square\n  Pharmaceuticals Ltd.\n   Unit Price: ৳ 0.80 " />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+
+
+                android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:text="   Azithromycin Dihydrate\n   200 mg/5 ml Premier\n   Pharmaceuticals Ltd.\n   30 ml bottle: ৳ 120.00 "
+
+                    android:autoSizeMaxTextSize="24dp"
+                    android:drawableLeft="@drawable/azithromycin"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

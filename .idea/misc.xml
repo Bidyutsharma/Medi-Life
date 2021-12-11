@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/drawable/menu.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_bkash_page.xml" value="0.12" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_diagnosis.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_diagnosis_details.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_home.xml" value="0.234375" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_home_nevi.xml" value="0.2359375" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_homepage.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_loginpage.xml" value="0.176" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_medicine.xml" value="0.176" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/activity_users.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/content_slidebar.xml" value="0.234375" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/SqLiteApp/app/src/main/res/layout/header_menu.xml" value="0.1" />
