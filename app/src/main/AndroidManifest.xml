@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SIgnUp">
         <activity
+            android:name=".medicineDetails"
+            android:exported="false" />
+        <activity
             android:name=".medicine"
             android:exported="false" />
         <activity
