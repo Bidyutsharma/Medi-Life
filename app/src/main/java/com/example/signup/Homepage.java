@@ -151,6 +151,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         switch (item.getItemId()) {
 
             case R.id.nav_home:
+                Toast.makeText(this, "HomePage", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Homepage.this,Home.class);
                 startActivity(intent);
                 break;
@@ -160,13 +161,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 break;
 
             case R.id.nav_Users:
+                Toast.makeText(this, "Users", Toast.LENGTH_SHORT).show();
                 Intent intentt = new Intent(Homepage.this,Users.class);
                 startActivity(intentt);
                 break;
-//            case R.id.bloodBtn:
-//                Intent intentt = new Intent(Homepage.this,Diagnosis.class );
-//                startActivity(intentt);
-//                break;
 
             case R.id.nav_profiles:
                 Toast.makeText(this, "WELCOME TO YOUR PROFILE", Toast.LENGTH_SHORT).show();

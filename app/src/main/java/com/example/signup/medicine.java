@@ -18,7 +18,7 @@ public class medicine extends AppCompatActivity {
         aceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(medicine.this,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(medicine.this,"Ace medicine added",Toast.LENGTH_SHORT).show();
                 Intent intentMedi = new Intent(medicine.this,medicineDetails.class);
                 startActivity(intentMedi);
             }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/background"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <ImageView
@@ -20,9 +20,9 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+
         android:layout_marginBottom="10dp"
         android:background="#9C312F35"
         android:padding="10dp"
@@ -95,7 +95,7 @@
         android:layout_below="@+id/btnsignin"
 
         android:text="Forgot Passward!!"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
             android:layout_margin="10dp"/>
 
     <TextView
@@ -105,7 +105,7 @@
         android:layout_above="@id/socialicons"
         android:layout_centerHorizontal="true"
         android:text="or sign in with"
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:id="@+id/socialicons"

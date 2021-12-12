@@ -21,7 +21,7 @@ public class medicineDetails extends AppCompatActivity {
         cartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(medicineDetails.this,"Medicine added",Toast.LENGTH_SHORT).show();
+                Toast.makeText(medicineDetails.this,"Add to Cart",Toast.LENGTH_SHORT).show();
                 Intent intentCart = new Intent(medicineDetails.this,Cartt.class);
                 startActivity(intentCart);
             }

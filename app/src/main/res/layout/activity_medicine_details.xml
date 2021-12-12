@@ -69,10 +69,11 @@
                 android:layout_height="250dp"
                 android:layout_weight="1"
                 android:autoSizeMaxTextSize="24dp"
+                android:backgroundTint="#F4D9D9"
+
                 android:drawableBottom="@drawable/acepic"
 
                 android:text="   Ace Tablet\n   paracetamol Square Pharmaceuticals Ltd.\n   Unit Price: ৳ 0.80 "
-
                 android:textAlignment="center" />
 
 

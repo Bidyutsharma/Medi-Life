@@ -20,7 +20,7 @@ public class DiagnosisDetails extends AppCompatActivity {
         bkashBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(DiagnosisDetails.this,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(DiagnosisDetails.this,"Click Bkash & Bkash working..",Toast.LENGTH_SHORT).show();
                 Intent intentBkash = new Intent(DiagnosisDetails.this,bkashPage.class);
                 startActivity(intentBkash);
             }

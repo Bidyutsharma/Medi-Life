@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity {
         blood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Home.this,"Diagnosis Working...",Toast.LENGTH_SHORT).show();
                 Intent intentBlood = new Intent(Home.this,Diagnosis.class);
                 startActivity(intentBlood);
 
@@ -38,7 +38,7 @@ public class Home extends AppCompatActivity {
         pharmacyBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Home.this,"Medicine Delivery Loading...",Toast.LENGTH_SHORT).show();
                 Intent intentmedicine = new Intent(Home.this,medicine.class);
                 startActivity(intentmedicine);
             }

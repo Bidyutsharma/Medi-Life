@@ -21,7 +21,7 @@ public class Diagnosis extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Diagnosis.this,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Diagnosis.this,"Checking..",Toast.LENGTH_SHORT).show();
                 Intent intentOk = new Intent(Diagnosis.this,DiagnosisDetails.class);
                 startActivity(intentOk);
             }
