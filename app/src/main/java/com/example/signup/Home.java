@@ -13,6 +13,7 @@ public class Home extends AppCompatActivity {
     Button blood;
     Button pharmacyBtn1;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,8 @@ public class Home extends AppCompatActivity {
 
         blood= (Button) findViewById(R.id.bloodBtn3);
         pharmacyBtn1 = (Button) findViewById(R.id.pharmacyBtn1);
+
+
 
         blood.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,5 +43,8 @@ public class Home extends AppCompatActivity {
                 startActivity(intentmedicine);
             }
         });
+
+
+
     }
 }

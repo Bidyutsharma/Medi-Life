@@ -6,4 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".medicineDetails">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/piclogo" />
+
+            <EditText
+
+                android:layout_width="match_parent"
+
+
+                android:layout_height="53dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#C0D5C1"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="NotSibling,UnknownId"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+
+            <Button
+
+                android:id="@+id/aceBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="24dp"
+                android:drawableBottom="@drawable/acepic"
+
+                android:text="   Ace Tablet\n   paracetamol Square Pharmaceuticals Ltd.\n   Unit Price: ৳ 0.80 "
+
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+
+            <Button
+
+                android:id="@+id/cartBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_weight="1"
+
+
+                android:autoSizeMaxTextSize="24dp"
+                android:background="#7454BA"
+
+
+                android:text="Add to Cart"
+
+                android:textAlignment="center" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SIgnUp">
         <activity
+            android:name=".BuyMore"
+            android:exported="false" />
+        <activity
+            android:name=".MedicinePayment"
+            android:exported="false" />
+        <activity
+            android:name=".Cartt"
+            android:exported="false" />
+        <activity
             android:name=".medicineDetails"
             android:exported="false" />
         <activity
