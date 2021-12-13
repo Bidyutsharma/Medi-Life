@@ -21,7 +21,7 @@
 
         <item
             android:id="@+id/nav_TopHospital"
-            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:icon="@drawable/ic_baseline_local_hospital_25"
             android:title="Top Hospital" />
 
         <item

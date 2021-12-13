@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     tools:context=".Loginpage"
-    android:background="@drawable/background">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -21,12 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_person_25"
+        android:drawableTint="@color/black"
         android:drawablePadding="10dp"
         android:hint="User name"
-        android:textColor="#F3EFEF"
-        android:textColorHighlight="@color/white"
-        android:textColorHint="@color/white">
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black">
 
     </EditText>
 
@@ -36,10 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username1"
         android:layout_marginTop="50dp"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_25"
+        android:drawableTint="@color/black"
         android:drawablePadding="10dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
         android:hint="password">
 
     </EditText>
