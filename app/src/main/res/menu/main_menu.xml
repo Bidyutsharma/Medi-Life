@@ -20,6 +20,11 @@
             android:title="Users" />
 
         <item
+            android:id="@+id/nav_TopHospital"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="Top Hospital" />
+
+        <item
             android:id="@+id/nav_profiles"
             android:icon="@drawable/ic_baseline_assignment_24"
             android:title="Profiles" />

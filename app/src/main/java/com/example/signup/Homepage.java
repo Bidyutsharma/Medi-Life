@@ -166,6 +166,12 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intentt);
                 break;
 
+            case R.id.nav_TopHospital:
+                Toast.makeText(this, "Showing  TopHospital", Toast.LENGTH_SHORT).show();
+                Intent intentHospital = new Intent(Homepage.this,TopHospital.class);
+                startActivity(intentHospital);
+                break;
+
             case R.id.nav_profiles:
                 Toast.makeText(this, "WELCOME TO YOUR PROFILE", Toast.LENGTH_SHORT).show();
                 break;

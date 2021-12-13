@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class Diagnosis extends AppCompatActivity {
     Button ok;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class Diagnosis extends AppCompatActivity {
         setContentView(R.layout.activity_diagnosis);
 
         ok = (Button) findViewById(R.id.OkBtn);
+
 
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,5 +28,6 @@ public class Diagnosis extends AppCompatActivity {
                 startActivity(intentOk);
             }
         });
+
     }
 }
